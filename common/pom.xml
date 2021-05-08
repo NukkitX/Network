@@ -5,7 +5,7 @@
     <parent>
         <artifactId>network-parent</artifactId>
         <groupId>com.nukkitx.network</groupId>
-        <version>1.6.27-SNAPSHOT</version>
+        <version>1.6.28-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
@@ -17,6 +17,12 @@
             <artifactId>netty-buffer</artifactId>
             <version>${netty.version}</version>
             <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.netty.incubator</groupId>
+            <artifactId>netty-incubator-transport-native-io_uring</artifactId>
+            <version>0.0.5.Final</version>
+            <classifier>linux-x86_64</classifier>
         </dependency>
         <dependency>
             <groupId>io.netty</groupId>
